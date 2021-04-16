@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Producto Punto</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/general.css">
+  </head>
+  <body>
+        <header class="cabecera">
+          <h5>Producto Punto</h5>
+          <span class="btn"><a id="d-menu" href="#"><i class="fas fa-bars"></i></a></span>
+        </header>
+
+        <main>
+              <div class="principal">
+                    <article class="Intro">
+                      <h3>Ingresa los valores de los componentes de los Vectores</h3>
+                      <hr>
+                      <p>
+                        Para realizar la multiplicacion (producto punto) de 2 vectores
+                        debemos conocer los puntos en nuestro eje de coordenadas X Y.
+                        Tomamos los  valores de cada uno y lo multiplicamos con su  semejante
+                        uno por uno.
+                      </p>
+                      <br>
+                      <p>Nota: Si deseas hacer la operacion con vectores
+                      en 3 dimensiones presiona el botón</p>
+                      <span id="btn3D" class="btn"><a href="#">Cambiar a 3D</a></span>
+                      <span id="btn2D" class="btn"><a href="#">Cambiar a 2D</a></span>
+                    </article>
+
+                    <form class="formulario">
+                      <fieldset>
+                          <legend>Vector A</legend>
+                          <input type="number" id="box1" name="" class="caja" placeholder="valor en X" value="">
+                          <input type="number" id="box2" name="" class="caja" placeholder="valor en Y" value="">
+                          <input type="number" id="box3" name="" class="caja caja3D"  placeholder="valor en Z" value="">
+                      </fieldset>
+
+                      <fieldset>
+                          <legend>Vector B</legend>
+                          <input type="number" id="box4" name="" class="caja" placeholder="valor en X" value="">
+                          <input type="number" id="box5" name="" class="caja" placeholder="valor en Y" value="">
+                          <input type="number" id="box6" name="" class="caja caja3D"  placeholder="valor en Z" value="">
+                      </fieldset>
+
+                      <fieldset>
+                      <button type="button" name="button" id="calcula" onclick="Punto()" class="btn">Calcular</button>
+                      <input type="text" readonly placeholder="Resultado" id="resultado" name="resultado" class="caja" value="">
+                      </fieldset>
+                    </form>
+              </div>
+        </main>
+
+        <aside id="menu">
+              <nav>
+                <ul>
+                  <li><a href="Suma_V.html">Suma de Vectores</a></li>
+                  <li><a href="Resta_V.html">Resta de Vectores</a></li>
+                  <li><a href="Producto_P.html">Producto Punto</a></li>
+                  <li><a href="Producto_C.html">Producto Cruz</a></li>
+                  <li><a href="Escalar_V.html">Escalar por un Vector</a></li>
+                  <li><a href="Modulo_V.html">Módulo Vector</a></li>
+                  <li><a href="Planos.html">Planos</a></li>
+                  <li><a href="#">Ayuda</a></li>
+                </ul>
+              </nav>
+        </aside>
+
+        <script type="text/javascript" src="./js/main.js"></script>
+
+  </body>
+</html>

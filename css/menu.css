@@ -1,0 +1,74 @@
+body{
+  background-color: var(--azul);
+  height: 100vh;
+  display: flex;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+}
+.menu .bienvenida{
+  margin: 30px;
+}
+.menu .bienvenida h1{
+  text-align: center;
+}
+.menu .bienvenida p{
+  text-align: justify;
+}
+.barra{
+  width: 80%;
+}
+
+.barra ul li{
+text-align: center;
+margin: 20px;
+padding: 10px;
+border-radius: 10px;
+background-color: var(--aqua);
+border: solid var(--blanco) 4px;
+}
+.barra ul li a{
+display: block;
+width: 100%;
+color: var(--negro);
+}
+.barra ul li a:hover{
+background-color: var(--rojo);
+color: var(--negro);
+}
+
+@media screen and (min-width:600px) {
+  :root{
+    --nota: 12px;
+    --cuerpo: 18px;
+    --subEncabezado: 22px;
+    --Titulo: 24px;
+    --Encabezado: 28px;
+    --Display: 32px;
+    --Jumbo: 36px;
+  }
+  .menu{
+    width: 80%;
+  }
+  .barra ul{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  }
+  .barra ul li{
+    width: 200px;
+    margin: 0;
+    border: dashed var(--blanco) 1px;
+    border-radius: 0;
+  }
+
+  .barra ul li a{
+    width: 100%;
+    height: 100%;
+  }
+
+}
