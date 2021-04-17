@@ -41,6 +41,14 @@ background-color: var(--rojo);
 color: var(--negro);
 }
 
+.barra ul li ul{
+display: none;
+position: absolute;
+}
+.barra ul li:hover > .sub{
+display: block;
+}
+
 @media screen and (min-width:600px) {
   :root{
     --nota: 12px;
@@ -60,7 +68,7 @@ color: var(--negro);
   justify-content: center;
   }
   .barra ul li{
-    width: 200px;
+    width: 250px;
     margin: 0;
     border: dashed var(--blanco) 1px;
     border-radius: 0;

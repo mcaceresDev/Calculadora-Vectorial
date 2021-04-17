@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resta de Vectores</title>
+    <title>Suma de Vectores</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/general.css">
+
   </head>
   <body>
         <header class="cabecera">
-          <h5>Resta de Vectores</h5>
+          <h5>D de un Punto al Plano</h5>
           <span class="btn"><a id="d-menu" href="#"><i class="fas fa-bars"></i></a></span>
         </header>
 
     <main>
           <div class="principal">
                 <article class="Intro">
-                  <h3>Ingresa los valores de los componentes de los Vectores</h3>
+                  <h3>Ingresa los coeficientes del plano y coordenadas del punto</h3>
                   <hr>
                   <p>
-                    Para realizar la resta de 2 vectores
+                    Para realizar la suma de 2 vectores
                     debemos conocer los puntos en nuestro
                     eje de coordenadas X Y. Tomamos los
-                    valores de cada uno y los restamos con su
+                    valores de cada uno y lo sumamos con su
                     semejante uno por uno.
                     Los valores ingresados pueden ser decimales
                     positivos o negativos
@@ -31,27 +32,26 @@
                   <br>
                   <p>Nota: Si deseas hacer la operacion con vectores
                   en 3 dimensiones presiona el botón</p>
-                  <span id="btn3D" class="btn"><a href="#">Cambiar a 3D</a></span>
-                  <span id="btn2D" class="btn"><a href="#">Cambiar a 2D</a></span>
                 </article>
 
-                <form class="formulario">
+                <form class="formulario planos">
                   <fieldset>
-                      <legend>Vector A</legend>
+                      <legend>Plano A</legend>
                       <input type="number" id="box1" name="" class="caja" placeholder="valor en X" value="">
                       <input type="number" id="box2" name="" class="caja" placeholder="valor en Y" value="">
-                      <input type="number" id="box3" name="" class="caja caja3D"  placeholder="valor en Z" value="">
+                      <input type="number" id="box3" name="" class="caja"  placeholder="valor en Z" value="">
+                      <input type="number" id="box4" name="" class="caja" placeholder="valor D1" value="">
                   </fieldset>
 
                   <fieldset>
-                      <legend>Vector B</legend>
-                      <input type="number" id="box4" name="" class="caja" placeholder="valor en X" value="">
+                      <legend>Punto M</legend>
                       <input type="number" id="box5" name="" class="caja" placeholder="valor en Y" value="">
-                      <input type="number" id="box6" name="" class="caja caja3D"  placeholder="valor en Z" value="">
+                      <input type="number" id="box6" name="" class="caja"  placeholder="valor en Z" value="">
+                      <input type="number" id="box7" name="" class="caja"  placeholder="valor en Z" value="">
                   </fieldset>
 
                   <fieldset>
-                  <button type="button" name="button" id="restar" onclick="recogeDatos()" class="btn">Calcular</button>
+                  <button type="button" name="button" id="calcula" onclick="puntoPlano()" class="btn">Calcular</button>
                   <input type="text" readonly placeholder="Resultado" id="resultado" name="resultado" class="caja" value="">
                   </fieldset>
                 </form>

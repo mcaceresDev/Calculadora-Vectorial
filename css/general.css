@@ -78,6 +78,7 @@ body{
 
 #menu{
   max-width: 0;
+  height: 100vh;
   overflow: hidden;
   transition: .5s max-width;
   position: absolute;
@@ -87,6 +88,7 @@ body{
 #menu.despliega{
   background-color: var(--aquaOscuro);
   max-width: 200px;
+  overflow: visible;
 }
 #menu li{
   height: 40px;
@@ -105,6 +107,20 @@ body{
 #menu li a:hover{
   font-size: 16px;
 }
+#menu nav ul li .sub{
+display: none;
+position: absolute;
+background-color: var(--naranja);
+width: 120px;
+}
+#menu nav ul li:hover > .sub{
+display: block;
+margin-top: -40px;
+right: 100%;
+}
+#menu nav ul li:hover > .sub li{
+height: auto;
+}
 
 @media screen and (min-width:300px) {
   .cabecera{
@@ -117,6 +133,9 @@ body{
     align-content: center;
     justify-content: center;
     column-gap: 5px;
+  }
+  #menu nav ul li .sub{
+  width: 200px;
   }
 }
 
@@ -182,6 +201,9 @@ body{
   }
   .formulario fieldset{
     max-width: 350px;
+  }
+  .formulario.planos fieldset{
+    max-width: 450px;
   }
   .formulario fieldset:last-child{
     width: 100%;
