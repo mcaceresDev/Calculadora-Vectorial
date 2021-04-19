@@ -254,7 +254,7 @@ oculta.addEventListener("click", oculta3D);
 			var cal3=num3/num7;
 
 					if (cal1==cal2 && cal2==cal3 && cal3==cal1) {
-						var rest=num4-num8;
+						var rest= Math.abs(num8-num4);
 
 						var potencia=  Math.pow(num1,2);
 						var potencia2=  Math.pow(num2,2);

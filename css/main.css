@@ -116,6 +116,9 @@ hr{
   width: 70%;
   margin: 20px auto;
 }
+.linea{
+  width: 70px;
+}
 .btn{
   display: block;
   text-align: center;
@@ -123,4 +126,18 @@ hr{
   border-radius: 10px;
   padding: 5px;
   background-color: var(--rojo);
+}
+.raiz{
+  border-top: solid black 1px;
+  border-top-width: thin;
+}
+.vector{
+  border-top: solid black;
+  border-top-style: outset;
+}
+
+.procedimiento{
+  width: 50%;
+  height: 50%;
+  background-color: var(--gris);
 }
